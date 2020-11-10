@@ -1,0 +1,256 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.topic{
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+}  
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+  background: red;
+  height: 120px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 50px;
+  line-height: 120px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 120px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: orange;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: orange;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+}
+
+.presentation{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.introduction{
+  flex: 1;
+}
+
+.intro-text h1{
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+  margin-top: 5px;
+  font-size: 25px;
+  color: #585772;
+}
+
+.predict-text{
+font-size: 30px;
+}
+
+.cta{
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+
+.cta-add{
+  background: red;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  color: white;
+  margin: 30px 0px 0px 30px;
+}
+
+.cta-topic{
+border: 2px solid red;
+background: transparent;
+color: red;
+width: 150px;
+height: 50px;
+font-family: 'Quicksand', sans-serif;
+font-size: 25px;
+}
+
+button{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.cover{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.cover img{
+  height: 100%;
+  /* filter: drop-shadow(0px 5px 3px black); */
+  animation: drop 1.5s ease;
+}
+
+#image-preview{
+  justify-content: center;
+  border:1px solid #000;
+  height: 336px; 
+  width: 336px;
+}
+
+.big-circle{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.5;
+  height: 80%;
+}
+
+.mid-circle{
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0.4;
+  height: 60%;
+}
+
+.small-circle{
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+  /* opacity: 0.7; */
+}
+
+@media screen and (max-width: 1024px){
+  .presentation{
+      flex-direction: column;
+  }
+
+  .introduction{
+      margin-top: 5vh;
+      text-align: center;
+  }
+
+  .intro-text h1{
+      font-size: 30px;
+  }
+
+ .intro-text p{
+     font-size: 18px;
+ }
+
+ .cta{
+     padding: 10px 0px 0px 0px;
+ }
+
+ .cover img{
+     height: 100%;
+ }
+
+ .small-circle,
+ .mid-circle,
+ .big-circle{
+     opacity: 0.2;
+ }
+}

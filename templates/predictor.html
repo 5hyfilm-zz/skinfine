@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+        <!-- <title>Responsive Navbar</title> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+
+    <body>
+        <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SkinFine</label>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a class="active" href="/predictor">Predictor</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        </nav>
+    
+    <main>
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>How to use</h1>
+                    <p>1. Take or select photos of skin diseases you want to categorize.</p>
+                    <p>2. Press the upload button.</p>
+                    <p>3. Wait for the analysis result with advice.</p>
+                </div>
+                <div class="cta">
+                    <form action="" method=post enctype=multipart/form-data>
+                        <input type="file" name="file" class="choose-file" onchange="document.getElementById('image-preview').src = window.URL.createObjectURL(this.files[0])"/>
+                        <button type="submit" value=Upload class="upload">Upload</button>
+                    </form>
+                    <br><br><br>
+                    <button class="cta-topic">Prediction</button>
+                    <div class="predict-text">{{label}}</div>
+                    <br>
+                    <button class="cta-topic">Treat</button>
+                    <div class="predict-text">{{cure}}</div>
+                </div>
+            </div>
+            <div class="cover">
+                <img id="image-preview" src="{{imagesource}}"/>
+            </div>
+        </section>
+
+        <!-- <img class="big-circle" src="/static/images/big-eclipse.svg" alt=""/>
+        <img class="mid-circle" src="/static/images/mid-eclipse.svg" alt=""/>
+        <img class="small-circle" src="/static/images/small-eclipse.svg" alt=""/> -->
+
+    </main>
+
+    </body>
+
+
+  </html>
