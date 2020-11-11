@@ -189,6 +189,12 @@ button{
   animation: drop 1.5s ease;
 }
 
+.responsive-image {
+  width: 100%;
+  height: auto;
+  /* animation: drop 1.5s ease; */
+}
+
 #image-preview{
   justify-content: center;
   border:1px solid #000;
