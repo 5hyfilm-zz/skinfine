@@ -34,10 +34,13 @@
                     <p>3. Wait for the analysis result with advice.</p>
                 </div>
                 <div class="cta">
-                    <form action="" method=post enctype=multipart/form-data>
-                        <input type="file" name="file" class="choose-file" onchange="document.getElementById('image-preview').src = window.URL.createObjectURL(this.files[0])"/>
-                        <button type="submit" value=Upload class="upload">Upload</button>
+                    <form action="" method=post enctype=multipart/form-data>        
+                        <!-- <button class="cta-topic">Upload a file</button> -->
+                        <label for="file" class="cta-add">Take a photo</label>
+                        <input type="file" id="file" name="file" onchange="document.getElementById('image-preview').src = window.URL.createObjectURL(this.files[0])"/>
+                        <button for="file" type="submit" value=Upload class="cta-add">Upload</button>
                     </form>
+                </div>
                     <br><br><br>
                     <button class="cta-topic">Prediction</button>
                     <div class="predict-text">{{label}}</div>
