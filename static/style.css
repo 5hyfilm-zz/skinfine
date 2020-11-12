@@ -189,16 +189,6 @@ input[type='file']{
   margin-top: 1rem;
 }
 
-.xxx{
-  color: white;
-  height: 60px;
-  width: 250px;
-  background-color: #ff55aa;
-  margin: auto;
-  display: flex;
-}
-
-
 button{
   font-family: 'Quicksand', sans-serif;
 }
