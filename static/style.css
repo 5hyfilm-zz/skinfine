@@ -177,6 +177,28 @@ input[type='file']{
   display: none;
 }
 
+.cta-add2{
+  background-color: red;
+  width: 150px;
+  height: 50px;
+  color: white;
+  padding: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.xxx{
+  color: white;
+  height: 60px;
+  width: 250px;
+  background-color: #ff55aa;
+  margin: auto;
+  display: flex;
+}
+
+
 button{
   font-family: 'Quicksand', sans-serif;
 }
