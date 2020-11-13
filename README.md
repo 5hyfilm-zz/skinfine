@@ -25,6 +25,7 @@ These classes need to consult a doctor.
 
 ## Demo screenshort and video
 ### Screenshort
-<img src="">
+<img src="https://github.com/fxlmer/SkinFine/blob/main/web-screenshot.png" width="576" height="351">
+
 ### Video
 [<img src="https://img.youtube.com/vi/ryzXCvbMIfE/maxresdefault.jpg" width="50%">](https://youtu.be/ryzXCvbMIfE)
