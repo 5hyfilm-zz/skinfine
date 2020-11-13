@@ -15,17 +15,15 @@ These classes need to consult a doctor.
 - Psoriasis [ps]
 - Seborrhoeic Keratosis [sk]
 
-
 ## How to use
-
 1. Clone or download this [repository](https://github.com/fxlmer/SkinFine).
 2. Install all requirements using ```pip(3) install -r requirements.txt``` in terminal
-3. Run ```app.py```.
+3. Run ```python(3) app.py```.
 4. Open http://0.0.0.0:5000/ in your browser
 
 ## Demo screenshort and video
 ### Screenshort
-<img src="https://github.com/fxlmer/SkinFine/blob/main/web-screenshot.png" width="576" height="351">
+<img src="https://github.com/fxlmer/SkinFine/blob/main/web-screenshot.png" width="576" height="351" style="margin-left: auto margin-right: auto;">
 
 ### Video
-[<img src="https://img.youtube.com/vi/ryzXCvbMIfE/maxresdefault.jpg" width="50%">](https://youtu.be/ryzXCvbMIfE)
+[<img src="https://img.youtube.com/vi/ryzXCvbMIfE/maxresdefault.jpg" style="margin-left: auto margin-right: auto;">](https://youtu.be/ryzXCvbMIfE)
