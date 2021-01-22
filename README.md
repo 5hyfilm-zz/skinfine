@@ -1,5 +1,5 @@
 # SkinFine
-This website is a development based on experiments [Skin Diseases Classification Using Machine Learning]( https://github.com/fxlmer/JSTP22_SkinDiseaseClassificationUsingMachineLearning) developed using Flask, HTML, CSS, and JavaScript.
+This website is a development based on experiments [Skin Disease Classification Using Machine Learning]( https://github.com/fxlmer/JSTP22_SkinDiseaseClassificationUsingMachineLearning) developed using Flask, HTML, CSS, and JavaScript.
 
 ## Usability
 It can classify 4 types of skin diseases
