@@ -22,7 +22,7 @@ These classes need to consult a doctor.
 4. Activate virtualenv by type ```source venv/bin/activate``` in terminal.
 5. Install all requirements by type ```pip3 install -r requirements.txt``` in terminal.
 6. Run ```flask run``` in terminal.
-7. Open http://0.0.0.0:5000/ in your browser.
+7. Open localhost http://127.0.0.1:5000 in your browser.
 
 ## Demo screenshort and video
 ### Screenshort
