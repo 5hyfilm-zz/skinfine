@@ -21,7 +21,7 @@ These classes need to consult a doctor.
 3. Create virtualenv by type ```python3 -m venv venv``` in terminal.
 4. Activate virtualenv by type ```source venv/bin/activate``` in terminal.
 5. Install all requirements by type ```pip3 install -r requirements.txt``` in terminal.
-6. Run ```python3 app.py``` in terminal.
+6. Run ```flask run``` in terminal.
 7. Open http://0.0.0.0:5000/ in your browser.
 
 ## Demo screenshort and video
