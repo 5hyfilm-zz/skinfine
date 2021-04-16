@@ -45,6 +45,7 @@ def ensemble_predict(test_data):
             answer_list.append(mean_ans)
         all_answer_list.append(answer_list)
         result = all_answer_list[0]
+        predict_probality = max(result)*100
     mean_answer = np.argmax(result)
 
     if mean_answer == 0:
@@ -55,8 +56,8 @@ def ensemble_predict(test_data):
         print('Label: Psoriasis')
     elif mean_answer == 3:
         print('Label: Seborrhoeic Keratosis')
-        
-    return mean_answer
+    
+    return mean_answer, predict_probality
 
 def my_random_string(string_length=10):
     """Returns a random string of length string_length."""
@@ -100,7 +101,8 @@ def upload_file():
 
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
-            result = ensemble_predict(file_path)
+            result = ensemble_predict(file_path)[0]
+            predict_probality = str(round(ensemble_predict(file_path)[1], 2)) + ' %'
             if result == 0:
                 label = 'Atopic Dermatitis'
                 cure = 'Self-healing at home'
@@ -123,7 +125,7 @@ def upload_file():
 
             os.rename(file_path, os.path.join(app.config['UPLOAD_FOLDER'], filename))
             print("--- %s seconds ---" % str (time.time() - start_time))
-            return render_template('predictor.html', label=label, cure=cure, imagesource='upload_folder/' + filename)
+            return render_template('predictor.html', label=label, cure=cure, predict_probality=predict_probality, imagesource='upload_folder/' + filename)
 
 @app.route('/upload_folder/<filename>')
 def uploaded_file(filename):
