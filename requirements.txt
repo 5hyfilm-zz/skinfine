@@ -13,7 +13,6 @@ grpcio==1.32.0
 gunicorn==20.0.4
 h5py==2.10.0
 idna==2.10
-imutils==0.5.3
 itsdangerous==1.1.0
 Jinja2==2.11.2
 Keras-Preprocessing==1.1.2
@@ -21,7 +20,6 @@ Markdown==3.3.2
 MarkupSafe==1.1.1
 numpy==1.18.5
 oauthlib==3.1.0
-opencv-contrib-python==4.4.0.44
 opt-einsum==3.3.0
 Pillow==8.0.0
 protobuf==3.13.0
@@ -34,7 +32,7 @@ six==1.15.0
 tensorboard==2.3.0
 tensorboard-plugin-wit==1.7.0
 tensorflow==2.3.1
-tensorflow-estimator==2.3.0
+# tensorflow-estimator==2.3.0
 termcolor==1.1.0
 urllib3==1.25.11
 Werkzeug==1.0.1

@@ -8,7 +8,6 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, i
 from tensorflow.keras.models import Sequential, load_model
 import numpy as np
 import argparse
-import imutils
 import time
 import uuid
 import base64
