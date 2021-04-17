@@ -63,7 +63,7 @@ def my_random_string(string_length=10):
     """Returns a random string of length string_length."""
     random = str(uuid.uuid4()) # Convert UUID format to a Python string.
     random = random.upper() # Make all characters uppercase.
-    random = random.replace("-","") # Remove the UUID '-'.
+    random = random.replace("-", "") # Remove the UUID '-'.
     return random[0:string_length] # Return the random string.
 
 def allowed_file(filename):
@@ -105,19 +105,19 @@ def upload_file():
             predict_probality = str(round(ensemble_predict(file_path)[1], 2)) + ' %'
             if result == 0:
                 label = 'Atopic Dermatitis'
-                cure = 'Self-healing at home'
+                advice = 'You can self-healing at home. Do not scratch, avoid factors that make the disease more aggravated, and prevent and treat dry skin by applying a moisturizer or lotion, should be applied immediately after showering.'
     
             elif result == 1:
                 label =	'Normal'
-                cure = 'Self-healing at home'
+                advice = 'Dont worry, you are fine. You can stay home.'
 
             elif result == 2:
                 label = 'Psoriasis'
-                cure = 'Consult the doctor'
+                advice = 'Should consult the doctor for treatment. If not treated, it may lead to symptoms of arthritis. Which can cause deformities and disability.'
 
             elif result == 3:
                 label = 'Seborrhoeic Keratosis'
-                cure = 'Consult the doctor'
+                advice = 'Should consult the doctor for treatment. Because this diseases is similar to skin cancers such as Malignant Melanoma.'
 
             print(result)
             print(file_path)
@@ -125,17 +125,14 @@ def upload_file():
 
             os.rename(file_path, os.path.join(app.config['UPLOAD_FOLDER'], filename))
             print("--- %s seconds ---" % str (time.time() - start_time))
-            return render_template('predictor.html', label=label, cure=cure, predict_probality=predict_probality, imagesource='upload_folder/' + filename)
+            return render_template('predictor.html', label=label, advice=advice, predict_probality=predict_probality, imagesource='upload_folder/' + filename)
 
 @app.route('/upload_folder/<filename>')
 def uploaded_file(filename):
-    return send_from_directory(app.config['UPLOAD_FOLDER'],
-                               filename)
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 app.add_url_rule('/upload_folder/<filename>', 'uploaded_file', build_only=True)
-app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
-    '/upload_folder':  app.config['UPLOAD_FOLDER']
-})
+app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {'/upload_folder':  app.config['UPLOAD_FOLDER']})
 
 @app.route('/contact')
 def contact_template():
