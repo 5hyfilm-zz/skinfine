@@ -27,27 +27,30 @@
                     <h1>How to Use</h1>
                     <p>1. Take or select photos of skin diseases you want to classify.</p>
                     <p>2. Press the upload button.</p>
-                    <p>3. Wait for the classified result with advice about 30 seconds.</p>
+                    <p>3. Wait for the classified result with advice about 2 minutes.</p>
                 </div>
                 <div class="cta">
                     <form action="" method=post enctype=multipart/form-data>        
                         <!-- <button class="cta-topic">Upload a file</button> -->
-                        <label for="file" class="cta-add2">Take a photo</label>
+                        <label for="file" class="button"><span class="button__text">Take a photo</span></label>
                         <input type="file" id="file" name="file" onchange="document.getElementById('image-preview').src = window.URL.createObjectURL(this.files[0])"/>
-                        <button for="file" type="submit" value=Upload class="cta-add">Upload</button>
+                        <!-- <button for="file" type="submit" value=Upload class="cta-add2">Upload</button> -->
+                        <button for="file" type="submit" value=Upload class="button" onclick="this.classList.toggle('button--loading')"><span class="button__text">Upload</span></button>
+
                     </form>
                 </div>
                     <br><br><br>
-                    <button class="cta-topic">Prediction</button>
+                    <button class="result-topic">Prediction</button>
                     <div class="predict-text">{{label}}</div>
                     <br>
-                    <button class="cta-topic">Probability</button>
+                    <button class="result-topic">Probability</button>
                     <div class="predict-text">{{predict_probality}}</div>
                     <br>
-                    <button class="cta-topic">Advice</button>
+                    <button class="result-topic">Advice</button>
                     <div class="predict-text">{{advice}}</div>
                 </div>
             </div>
+            <br>
             <div class="cover">
                 <img id="image-preview" src="{{imagesource}}"/>
             </div>
