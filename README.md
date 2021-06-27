@@ -16,7 +16,7 @@ These classes need to consult a doctor.
 - Seborrhoeic Keratosis [sk]
 
 ## How to use
-1. Clone or download this [repository](https://github.com/fxlmer/SkinFine).
+1. Clone or download this [repository](https://github.com/5hyfilm/SkinFine).
 2. Change directory by type ```cd SkinFine``` in terminal.
 3. Create virtualenv by type ```python3 -m venv venv``` in terminal.
 4. Activate virtualenv by type ```source venv/bin/activate``` in terminal.
