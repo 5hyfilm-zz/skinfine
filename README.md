@@ -24,7 +24,7 @@ These classes need to consult a doctor.
 6. Run ```flask run``` in terminal.
 7. Open localhost http://127.0.0.1:5000 in your browser.
 
-## Demo screenshort and video
+## Demo screenshot and video
 ### Screenshort
 <img src="https://github.com/fxlmer/SkinFine/blob/main/webscreenshot.png">
 
