@@ -1,5 +1,5 @@
 # SkinFine
-This website is a development based on experiments [Skin Disease Classification Using Machine Learning]( https://github.com/fxlmer/JSTP22_SkinDiseaseClassificationUsingMachineLearning) developed using Flask, HTML, CSS, and JavaScript.
+This website is a development based on experiments [Skin Disease Classification Using Machine Learning](https://github.com/5hyfilm/skin-diseases-classification-using-machine-learning) developed using Flask, HTML, CSS, and JavaScript.
 
 ## Usability
 It can classify 4 types of skin diseases
@@ -16,8 +16,8 @@ These classes need to consult a doctor.
 - Seborrhoeic Keratosis [sk]
 
 ## How to use
-1. Clone or download this [repository](https://github.com/5hyfilm/SkinFine).
-2. Change directory by type ```cd SkinFine``` in terminal.
+1. Clone or download this [repository](https://github.com/5hyfilm/skinfine).
+2. Change directory by type ```cd skinfine``` in terminal.
 3. Create virtualenv by type ```python3 -m venv venv``` in terminal.
 4. Activate virtualenv by type ```source venv/bin/activate``` in terminal.
 5. Install all requirements by type ```pip3 install -r requirements.txt``` in terminal.
@@ -26,7 +26,7 @@ These classes need to consult a doctor.
 
 ## Demo screenshot and video
 ### Screenshot
-<img src="https://github.com/fxlmer/SkinFine/blob/main/webscreenshot.png">
+<img src="https://github.com/5hyfilm/skinfine/blob/main/webscreenshot.png">
 
 ### Video
 [<img src="https://img.youtube.com/vi/ryzXCvbMIfE/maxresdefault.jpg">](https://youtu.be/ryzXCvbMIfE)
