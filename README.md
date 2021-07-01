@@ -25,7 +25,7 @@ These classes need to consult a doctor.
 7. Open localhost http://127.0.0.1:5000 in your browser.
 
 ## Demo screenshot and video
-### Screenshort
+### Screenshot
 <img src="https://github.com/fxlmer/SkinFine/blob/main/webscreenshot.png">
 
 ### Video
